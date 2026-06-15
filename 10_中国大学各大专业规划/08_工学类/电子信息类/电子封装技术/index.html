@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>电子封装技术</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="引航者高考志愿填报知识库"/><meta property="og:title" content="电子封装技术"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="电子封装技术"/><meta name="twitter:description" content="第一阶段：本科四年全流程规划 🟢 大一：奠定基石与初步认知 1."/><meta property="og:description" content="第一阶段：本科四年全流程规划 🟢 大一：奠定基石与初步认知 1."/><meta property="og:image:alt" content="第一阶段：本科四年全流程规划 🟢 大一：奠定基石与初步认知 1."/><meta property="og:image" content="https://gaokaozhishikuneo.pages.dev/static/og-image.png"/><meta property="og:image:url" content="https://gaokaozhishikuneo.pages.dev/static/og-image.png"/><meta name="twitter:image" content="https://gaokaozhishikuneo.pages.dev/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="gaokaozhishikuneo.pages.dev"/><meta property="og:url" content="https://gaokaozhishikuneo.pages.dev/10_中国大学各大专业规划/08_工学类/电子信息类/电子封装技术"/><meta property="twitter:url" content="https://gaokaozhishikuneo.pages.dev/10_中国大学各大专业规划/08_工学类/电子信息类/电子封装技术"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="第一阶段：本科四年全流程规划 🟢 大一：奠定基石与初步认知 1."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+window.__quartzGraphRuntimePath = "../../../graph-runtime.js"
+let __fetchDataPromise
+const fetchData = {
+  then(onFulfilled, onRejected) {
+    __fetchDataPromise ||= fetch("../../../static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchDataPromise ||= fetch("../../../static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchDataPromise ||= fetch("../../../static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.finally(onFinally)
+  },
+}
+let __fetchNavDataPromise
+const fetchNavData = {
+  then(onFulfilled, onRejected) {
+    __fetchNavDataPromise ||= fetch("../../../static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchNavDataPromise ||= fetch("../../../static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchNavDataPromise ||= fetch("../../../static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.finally(onFinally)
+  },
+}
+let __fetchGraphDataPromise
+const fetchGraphData = {
+  then(onFulfilled, onRejected) {
+    __fetchGraphDataPromise ||= fetch("../../../static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchGraphDataPromise ||= fetch("../../../static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchGraphDataPromise ||= fetch("../../../static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.finally(onFinally)
+  },
+}</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://gaokaozhishikuneo.pages.dev/index.xml"/></head><body data-slug="10_中国大学各大专业规划/08_工学类/电子信息类/电子封装技术"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">引航者高考志愿填报知识库</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="false" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-850"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>目录</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-850" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../10_中国大学各大专业规划/">10_中国大学各大专业规划</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../10_中国大学各大专业规划/08_工学类/">08_工学类</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../10_中国大学各大专业规划/08_工学类/电子信息类/">电子信息类</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>电子封装技术</a></div></nav><h1 class="article-title">电子封装技术</h1><p show-comma="true" class="content-meta"><time datetime="2026-01-10T16:00:00.000Z">2026年1月11日</time><span>14分钟阅读</span></p><ul class="tags"><li><a href="../../../tags/志愿填报" class="internal tag-link">志愿填报</a></li></ul></div></div><article class="popover-hint"><h2 id="第一阶段本科四年全流程规划">第一阶段：本科四年全流程规划<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第一阶段本科四年全流程规划" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-大一奠定基石与初步认知">🟢 大一：奠定基石与初步认知<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-大一奠定基石与初步认知" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. 上学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：高等数学（一元微积分A上）、大学英语综合（二）、大学英语听力（二）、大学英语口语（二）、思想道德修养与法律基础、形势与政策1、体育（一）。</p>
+<ul>
+<li><em>目标：</em> 奠定扎实的数理和语言基础，树立正确的价值观和道德观。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业基础课程</strong>：面向对象程序设计。</p>
+<ul>
+<li><em>目标：</em> 初步接触编程，培养编程思维和解决实际问题的能力。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：制造技术基础实习A（3周）。</p>
+<ul>
+<li><em>目标：</em> 了解电子制造的基本设备和工艺，增强动手能力和对专业的感性认识。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 下学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：高等数学（一元微积分A下）、大学英语综合（三）、大学英语听力（三）、大学英语口语（三）、毛泽东思想和中国特色社会主义理论体系概论（一）、形势与政策2、体育（二）。</p>
+<ul>
+<li><em>目标：</em> 继续深化数理和语言学习，加强思想政治教育。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业基础课程</strong>：电路（一）、电路实验。</p>
+<ul>
+<li><em>目标：</em> 掌握电路的基本原理和实验操作技能，为后续电子课程学习打基础。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：无（课程内）。</p>
+<ul>
+<li><em>建议：</em> 利用课余时间参加电子科技社团活动（如电子制作比赛），提高动手和团队协作能力。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="-大二核心技能与理论深化">🔵 大二：核心技能与理论深化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-大二核心技能与理论深化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. 上学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：多元微积分A（上）、大学英语综合（四）、大学英语听力（四）、大学英语口语（四）、力学、工程导论、形势与政策3、体育（三）。</p>
+<ul>
+<li><em>目标：</em> 学习多元微积分和力学知识，为专业课程学习提供理论支持。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业基础课程</strong>：电路（二）、模拟电子技术、模拟电子技术实验。</p>
+<ul>
+<li><em>目标：</em> 深入学习电子电路知识和实验技能，理解电子信号的处理和放大原理。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：现代制造技术实习（2周）。</p>
+<ul>
+<li><em>目标：</em> 熟悉电子制造的先进设备和工艺，了解行业的生产流程。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 下学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：多元微积分A（下）、电磁学、微电子封装导论、形势与政策4、体育（四）。</p>
+<ul>
+<li><em>目标：</em> 学习电磁学知识，了解电子封装技术的基本概念和发展方向。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业基础课程</strong>：线性代数、数字电子技术、数字电子技术实验。</p>
+<ul>
+<li><em>目标：</em> 掌握数字电路的设计和分析方法，提高逻辑思维能力。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：基础物理实验、综合物理实验。</p>
+<ul>
+<li><em>目标：</em> 通过实验加深对物理知识的理解和应用，培养科学实验的能力。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="-大三专业核心与科研启蒙">🟡 大三：专业核心与科研启蒙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-大三专业核心与科研启蒙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. 上学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：波动和光学、形势与政策5。</p>
+<ul>
+<li><em>目标：</em> 学习波动和光学知识，拓宽知识面。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业核心课程</strong>：电子封装材料、微电子器件可靠性、微电子封装（全英语）。</p>
+<ul>
+<li><em>目标：</em> 系统学习电子封装材料的特性和应用，掌握微电子器件的可靠性分析方法，提高专业英语水平。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：微电子封装综合实验A（3周）。</p>
+<ul>
+<li><em>目标：</em> 进行电子封装的综合实验，将理论知识应用到实践中，提高解决实际问题的能力。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 下学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：热学和近代物理、形势与政策6。</p>
+<ul>
+<li><em>目标：</em> 学习热学和近代物理知识，了解物理学的前沿领域。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业核心课程</strong>：半导体器件物理（全英语）、微纳加工技术、材料分析方法。</p>
+<ul>
+<li><em>目标：</em> 深入学习半导体器件的物理原理，掌握微纳加工技术和材料分析方法，为科研和实际工作打下基础。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：微电子封装综合实验B（3周）、材料分析表征综合实验（1.5周）。</p>
+<ul>
+<li><em>目标：</em> 进行更深入的实验研究，培养科研能力和创新思维。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 id="-大四实战应用与职业冲刺">🔴 大四：实战应用与职业冲刺<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-大四实战应用与职业冲刺" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. 上学期</strong></p>
+<ul>
+<li>
+<p><strong>通识课程</strong>：形势与政策7。</p>
+<ul>
+<li><em>目标：</em> 完成最后的通识教育要求。</li>
+</ul>
+</li>
+<li>
+<p><strong>专业课程</strong>：半导体制造技术、封装测试工艺与设备。</p>
+<ul>
+<li><em>目标：</em> 了解半导体制造的工艺流程和封装测试的设备与技术。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：CAD上机实习（2周）。</p>
+<ul>
+<li><em>目标：</em> 学习使用CAD软件进行电子封装设计，提高设计能力。</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. 下学期</strong></p>
+<ul>
+<li>
+<p><strong>学习任务</strong>：完成毕业设计（论文）。</p>
+<ul>
+<li><em>内容：</em> 围绕封装材料、工艺优化、可靠性提升、热管理设计、前沿技术等开展研究或设计，综合运用所学知识解决实际问题。</li>
+</ul>
+</li>
+<li>
+<p><strong>实践活动</strong>：参加毕业实习。</p>
+<ul>
+<li><em>方向：</em> 在封装测试厂（OSAT）、芯片设计公司（Fabless）、IDM厂或设备/材料公司实习，积累实际工作经验，为就业做好准备。</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 id="第二阶段升学与深造深度分析">第二阶段：升学与深造深度分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第二阶段升学与深造深度分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-考研方向与难度分析">1. 考研方向与难度分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-考研方向与难度分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th><strong>方向</strong></th><th><strong>核心要求</strong></th><th><strong>竞争态势</strong></th><th><strong>考试科目</strong></th></tr></thead><tbody><tr><td><strong>材料工程方向</strong></td><td>掌握材料科学基础、前沿理论，深究材料性能、制备与应用。</td><td><strong>竞争较大</strong>。材料科学领域广泛，报考人数呈上升趋势，录取比例约30%-40%。</td><td>政治、英语、数学、材料科学基础等。</td></tr><tr><td><strong>微电子与固体电子学</strong></td><td>扎实的电子科学、半导体物理知识，对IC设计制造要求高。</td><td><strong>难度较高</strong>。电子信息热门方向，报考人数众多，录取比例约20%-30%。</td><td>政治、英语、数学、半导体物理与器件等。</td></tr></tbody></table></div>
+<h3 id="2-专升本后考研挑战与优势">2. 专升本后考研：挑战与优势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-专升本后考研挑战与优势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>挑战</strong>：基础知识的系统性和深度可能相对薄弱，需更多时间和精力复习；部分院校可能存在认知偏差（正在逐渐改善）。</p>
+</li>
+<li>
+<p><strong>优势</strong>：通过两年本科学习，专业了解度提升；考研过程中往往更珍惜机会，学习动力更强。</p>
+</li>
+</ul>
+<h3 id="3-保研情况分析">3. 保研情况分析<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-保研情况分析" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>成绩要求</strong>：通常要求专业排名前10%-20%，平均学分绩点达标（如985高校要求3.5+）。</p>
+</li>
+<li>
+<p><strong>科研成果</strong>：发表学术论文（相关领域期刊）、参与国家级/省级科研项目、获得专利等是核心加分项。</p>
+</li>
+<li>
+<p><strong>综合素质</strong>：英语水平（如六级）、学科竞赛获奖、社会实践等。</p>
+</li>
+</ul>
+<blockquote>
+<p><strong>💡 个性化建议</strong></p>
+<ul>
+<li>
+<p><strong>保研</strong>：若成绩优秀（排名靠前）且有较强科研能力，建议保研进入更高水平院校。</p>
+</li>
+<li>
+<p><strong>考研</strong>：若成绩一般但有浓厚兴趣和毅力，考研是提升学历和专业水平的可行路径。</p>
+</li>
+<li>
+<p><strong>就业</strong>：对于基础较薄弱的专升本学生，可先积累实践经验，再根据情况决定是否考研。</p>
+</li>
+</ul>
+</blockquote>
+<hr/>
+<h2 id="第三阶段高价值竞赛推荐">第三阶段：高价值竞赛推荐<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第三阶段高价值竞赛推荐" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. 全国大学生电子设计竞赛</strong></p>
+<ul>
+<li>
+<p><strong>内容</strong>：规定时间内完成电子作品设计、制作、调试（电路、信号、控制等）。</p>
+</li>
+<li>
+<p><strong>周期</strong>：每两年一次。</p>
+</li>
+<li>
+<p><strong>要求</strong>：3人团队。需提前学习电子设计基础、软件工具，进行模拟训练。</p>
+</li>
+<li>
+<p><strong>价值</strong>：<strong>国家级奖项</strong>。升学加分、考研复试优势、企业青睐。</p>
+</li>
+</ul>
+<p><strong>2. 中国大学生机械工程创新创意大赛 - 机电一体化设计竞赛</strong></p>
+<ul>
+<li>
+<p><strong>内容</strong>：机电一体化领域的创新产品设计制作。</p>
+</li>
+<li>
+<p><strong>周期</strong>：每年一次。</p>
+</li>
+<li>
+<p><strong>要求</strong>：团队不超过5人。需掌握前沿技术，结合机械设计、电子控制、编程。</p>
+</li>
+<li>
+<p><strong>价值</strong>：奖金与荣誉证书，助力升学就业，提供科研实践机会。</p>
+</li>
+</ul>
+<hr/>
+<h2 id="第四阶段行业前景与就业指南">第四阶段：行业前景与就业指南<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第四阶段行业前景与就业指南" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-行业前景">1. 行业前景<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-行业前景" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>核心地位</strong>：封装是半导体价值链关键环节，市场巨大。</p>
+</li>
+<li>
+<p><strong>技术驱动</strong>：后摩尔时代，先进封装（2.5D/3D IC, Chiplet, SiP等）成为提升性能的主路径，高端人才需求激增。</p>
+</li>
+<li>
+<p><strong>国家战略</strong>：中国制造2025、集成电路大基金重点支持。</p>
+</li>
+</ul>
+<h3 id="2-就业方向细分">2. 就业方向细分<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-就业方向细分" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>A. 封装测试厂 (OSAT)</strong></p>
+<ul>
+<li>
+<p><em>制程/工艺工程师</em>：工艺开发、优化、良率提升（Wire Bond, Flip Chip等）。</p>
+</li>
+<li>
+<p><em>产品工程师</em>：NPI到量产的全过程技术管理。</p>
+</li>
+<li>
+<p><em>设备工程师</em>：关键设备的维护、调试、改造。</p>
+</li>
+<li>
+<p><em>良率/整合工程师</em>：数据分析，良率改进。</p>
+</li>
+<li>
+<p><em>质量/可靠性工程师</em>：可靠性测试、失效分析（FA）。</p>
+</li>
+<li>
+<p><em>测试工程师</em>：芯片和封装级测试程序开发。</p>
+</li>
+</ul>
+<p><strong>B. 芯片设计公司 (Fabless)</strong></p>
+<ul>
+<li>
+<p><em>封装设计工程师</em>：封装结构设计、SI/PI/热力仿真分析。</p>
+</li>
+<li>
+<p><em>封装研发工程师</em>：导入先进封装技术（SiP, Chiplet等）。</p>
+</li>
+<li>
+<p><em>产品/项目工程师</em>：管理封装相关开发项目。</p>
+</li>
+</ul>
+<p><strong>C. 半导体设备与材料供应商</strong></p>
+<ul>
+<li>
+<p><em>应用工程师</em>：技术支持、工艺调试。</p>
+</li>
+<li>
+<p><em>销售工程师</em>：技术型销售。</p>
+</li>
+<li>
+<p><em>研发工程师</em>：新型设备或材料研发。</p>
+</li>
+</ul>
+<p><strong>D. 其他领域</strong></p>
+<ul>
+<li>
+<p><em>IDM厂</em>（Intel, Samsung等）：涵盖上述所有角色。</p>
+</li>
+<li>
+<p><em>科研院所/高校</em>：前沿研究（通常需硕博学位）。</p>
+</li>
+<li>
+<p><em>电子整机制造商</em>：可靠性、物料认证部门。</p>
+</li>
+</ul>
+<h3 id="3-代表性企业">3. 代表性企业<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-代表性企业" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>封装测试厂</strong>：长电科技、通富微电、华天科技。</p>
+</li>
+<li>
+<p><strong>芯片设计公司</strong>：华为海思、紫光展锐、联发科。</p>
+</li>
+<li>
+<p><strong>设备与材料</strong>：中微公司、北方华创、上海新阳。</p>
+</li>
+<li>
+<p><strong>IDM</strong>：英特尔、三星、德州仪器。</p>
+</li>
+</ul>
+<h3 id="4-薪资参考">4. 薪资参考<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-薪资参考" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>一线城市</strong>：应届 8k-15k；3-5年 20k-35k；10年+ 40k+（含股权）。</p>
+</li>
+<li>
+<p><strong>二线城市</strong>：应届 6k-10k；3-5年 15k-25k；10年+ 30k+。</p>
+</li>
+</ul>
+<h3 id="5-关于专升本就业">5. 关于专升本就业<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-关于专升本就业" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>现状</strong>：虽面临一定学历竞争压力，但本专业极度看重<strong>实践能力</strong>和<strong>专业技能</strong>。</p>
+</li>
+<li>
+<p><strong>策略</strong>：通过实习和项目经验提升竞争力，企业更看重实际解决问题的能力。</p>
+</li>
+</ul>
+<hr/>
+<h2 id="第五阶段高含金量证书与技能清单">第五阶段：高含金量证书与技能清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第五阶段高含金量证书与技能清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="1-推荐证书">1. 推荐证书<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-推荐证书" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>半导体封装工程师证书</strong></p>
+<ul>
+<li>
+<p><em>作用</em>：证明专业技能，求职晋升优势。</p>
+</li>
+<li>
+<p><em>备考</em>：系统学习《半导体物理与器件》《电子封装技术》，参加培训与实操。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>国际微电子封装协会 (IMAPS) 认证</strong></p>
+<ul>
+<li>
+<p><em>作用</em>：国际认可度高，提升国际竞争力。</p>
+</li>
+<li>
+<p><em>备考</em>：关注国际前沿技术，参加国际认证培训与实践。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-必备硬技能清单">2. 必备硬技能清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-必备硬技能清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>专业知识</strong>：电路分析、模电/数电、半导体物理、材料科学基础、封装结构与工艺、可靠性与热管理。</p>
+</li>
+<li>
+<p><strong>实践操作</strong>：金工实习、电子工艺实习、材料测试、封装工艺模拟、失效分析设备操作。</p>
+</li>
+<li>
+<p><strong>软件应用</strong>：</p>
+<ul>
+<li>
+<p><strong>仿真</strong>：ANSYS (FEA, CFD), COMSOL。</p>
+</li>
+<li>
+<p><strong>设计</strong>：EDA工具（封装布局、布线）。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>外语能力</strong>：阅读技术文献，进行国际交流。</p>
+</li>
+</ul>
+<h3 id="3-行业趋势关注">3. 行业趋势关注<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-行业趋势关注" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p><strong>先进封装</strong>：Chiplet, Fan-Out, 3D IC, 异构集成。</p>
+</li>
+<li>
+<p><strong>材料创新</strong>：高导热、低介电常数、无铅焊料。</p>
+</li>
+<li>
+<p><strong>智能化</strong>：生产过程的自动化与AI融合。</p>
+</li>
+<li>
+<p><strong>跨学科</strong>：与IoT、大数据、人工智能的深度融合。</p>
+</li>
+</ul></article><hr/><div class="page-footer"><div id="access-gate"><div class="login-container"><h2>知识库访问验证</h2><p class="subtitle">请输入验证码绑定手机号访问知识库</p><div class="login-tabs"><button id="tab-phone-login" class="active">手机号登录</button><button id="tab-code-bind">验证码注册</button></div><div id="phone-login-panel" class="tab-panel active"><form id="phone-login-form"><input type="tel" id="phone-input" class="login-input" placeholder="请输入手机号" maxlength="11" autocomplete="tel"/><span id="phone-error" class="error-msg"></span><button type="submit" class="login-btn">登录</button></form></div><div id="code-bind-panel" class="tab-panel"><form id="bind-form"><input type="text" id="bind-code-input" class="login-input" placeholder="请输入验证码（16位）" maxlength="16" autocomplete="off"/><input type="tel" id="bind-phone-input" class="login-input" placeholder="请输入手机号" maxlength="11" autocomplete="tel"/><span id="bind-error" class="error-msg"></span><button type="submit" class="login-btn">注册</button></form></div><p class="login-footer">如有疑问请联系管理员获取验证码</p></div></div><div id="user-status"><span id="user-status-text"></span><button id="user-logout-btn">退出</button></div></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-639" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#第一阶段本科四年全流程规划" data-for="第一阶段本科四年全流程规划">第一阶段：本科四年全流程规划</a></li><li class="depth-1"><a href="#-大一奠定基石与初步认知" data-for="-大一奠定基石与初步认知">🟢 大一：奠定基石与初步认知</a></li><li class="depth-1"><a href="#-大二核心技能与理论深化" data-for="-大二核心技能与理论深化">🔵 大二：核心技能与理论深化</a></li><li class="depth-1"><a href="#-大三专业核心与科研启蒙" data-for="-大三专业核心与科研启蒙">🟡 大三：专业核心与科研启蒙</a></li><li class="depth-1"><a href="#-大四实战应用与职业冲刺" data-for="-大四实战应用与职业冲刺">🔴 大四：实战应用与职业冲刺</a></li><li class="depth-0"><a href="#第二阶段升学与深造深度分析" data-for="第二阶段升学与深造深度分析">第二阶段：升学与深造深度分析</a></li><li class="depth-1"><a href="#1-考研方向与难度分析" data-for="1-考研方向与难度分析">1. 考研方向与难度分析</a></li><li class="depth-1"><a href="#2-专升本后考研挑战与优势" data-for="2-专升本后考研挑战与优势">2. 专升本后考研：挑战与优势</a></li><li class="depth-1"><a href="#3-保研情况分析" data-for="3-保研情况分析">3. 保研情况分析</a></li><li class="depth-0"><a href="#第三阶段高价值竞赛推荐" data-for="第三阶段高价值竞赛推荐">第三阶段：高价值竞赛推荐</a></li><li class="depth-0"><a href="#第四阶段行业前景与就业指南" data-for="第四阶段行业前景与就业指南">第四阶段：行业前景与就业指南</a></li><li class="depth-1"><a href="#1-行业前景" data-for="1-行业前景">1. 行业前景</a></li><li class="depth-1"><a href="#2-就业方向细分" data-for="2-就业方向细分">2. 就业方向细分</a></li><li class="depth-1"><a href="#3-代表性企业" data-for="3-代表性企业">3. 代表性企业</a></li><li class="depth-1"><a href="#4-薪资参考" data-for="4-薪资参考">4. 薪资参考</a></li><li class="depth-1"><a href="#5-关于专升本就业" data-for="5-关于专升本就业">5. 关于专升本就业</a></li><li class="depth-0"><a href="#第五阶段高含金量证书与技能清单" data-for="第五阶段高含金量证书与技能清单">第五阶段：高含金量证书与技能清单</a></li><li class="depth-1"><a href="#1-推荐证书" data-for="1-推荐证书">1. 推荐证书</a></li><li class="depth-1"><a href="#2-必备硬技能清单" data-for="2-必备硬技能清单">2. 必备硬技能清单</a></li><li class="depth-1"><a href="#3-行业趋势关注" data-for="3-行业趋势关注">3. 行业趋势关注</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-2" class="overflow"><li><a href="../../../" class="internal">首页</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v1.0.0</a> © 2026</p><ul><li><a href="https://github.com/520705/gaokaozhishiku">GitHub</a></li><li><a href="/index">关于</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}container;content;isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript.js" type="module" data-persist="true"></script></html>
