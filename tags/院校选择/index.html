@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><title>首页</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="引航者高考志愿填报知识库"/><meta property="og:title" content="首页"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="首页"/><meta name="twitter:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image:alt" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:url" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta name="twitter:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="1234k-lang.github.io"/><meta property="og:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><meta property="twitter:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><link rel="icon" href="/gaokao-zhishiku/static/icon.png"/><meta name="description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta name="generator" content="Quartz"/><link href="/gaokao-zhishiku/index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="/gaokao-zhishiku/prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+window.__quartzGraphRuntimePath = "./graph-runtime.js"
+let __fetchDataPromise
+const fetchData = {
+  then(onFulfilled, onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.finally(onFinally)
+  },
+}
+let __fetchNavDataPromise
+const fetchNavData = {
+  then(onFulfilled, onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.finally(onFinally)
+  },
+}
+let __fetchGraphDataPromise
+const fetchGraphData = {
+  then(onFulfilled, onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.finally(onFinally)
+  },
+}</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://1234k-lang.github.io/gaokao-zhishiku/index.xml"/><script>
+// Auto-verify for public access
+(function(){
+  try {
+    localStorage.setItem("access_verified", "true");
+    localStorage.setItem("access_verified_session", "true");
+    localStorage.setItem("verified_code", "public");
+    localStorage.setItem("verified_code_session", "public");
+    localStorage.setItem("bound_phone", "public");
+    sessionStorage.setItem("access_verified", "true");
+    sessionStorage.setItem("access_verified_session", "true");
+    sessionStorage.setItem("verified_code", "public");
+    sessionStorage.setItem("verified_code_session", "public");
+  } catch(e) {}
+})();
+</script></head>
+<body data-slug="tags/院校选择">
+<div id="quartz-root" class="page">
+<div id="quartz-body">
+<div class="left sidebar">
+<h2 class="page-title"><a href="..">引航者高考志愿填报知识库</a></h2>
+</div>
+<div class="center">
+<div class="page-header">
+<div class="popover-hint">
+<nav class="breadcrumb-container" aria-label="breadcrumbs">
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/">Home</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/tags/">标签</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><span>院校选择</span></div>
+</nav>
+<h1 class="article-title">标签: 院校选择</h1>
+<p class="content-meta"><span>共 68 篇文章</span></p>
+</div>
+</div>
+<article class="popover-hint">
+<ul class="tags-list">
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-001_选出适合自己院校的八个角度/" class="internal">005-001_选出适合自己院校的八个角度</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-002_C9联盟/" class="internal">005-002_C9联盟：中国最顶尖大学的超级舰队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-003_985工程高校/" class="internal">005-003_985工程高校：中国高等教育的旗舰舰队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-004_211工程高校/" class="internal">005-004_211工程高校：通向一流的重要阶梯</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-005_双一流建设高校/" class="internal">005-005_双一流建设高校：中国高等教育的新标杆</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-006_省内重点建设高校/" class="internal">005-006_省内重点建设高校：各省特色名校全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-007_省属公办本科院校/" class="internal">005-007_省属公办本科院校：高等教育的重要组成部分</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-008_独立学院和民办本科院校/" class="internal">005-008_独立学院和民办本科院校：高考升学的另一重要选择</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-009_国家示范高职与国家骨干高职/" class="internal">005-009_国家示范高职与国家骨干高职：专科院校的国家队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-010_普通高等职业院校/" class="internal">005-010_普通高等职业院校：高等教育的重要组成部分</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-011_什么是部级直属高校/" class="internal">005-011_什么是部级直属高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-012_原部级直属高校名单/" class="internal">005-012_原部级直属高校名单：历史变迁与现状分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-013_现中央部委直属高校名单/" class="internal">005-013_现中央部委直属高校名单： current Configuration全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-014_基础学科拔尖学生培养试验计划/" class="internal">005-014_基础学科拔尖学生培养试验计划：培养未来学术大师的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-015_卓越工程师教育培养计划高校/" class="internal">005-015_卓越工程师教育培养计划高校：培养工程科技人才的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-016_卓越医生教育培养计划/" class="internal">005-016_卓越医生教育培养计划：培养未来医学精英的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-017_卓越法律人才教育培养计划高校/" class="internal">005-017_卓越法律人才教育培养计划高校：培养法治中国建设的栋梁之才</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-018_卓越教师培养计划高校/" class="internal">005-018_卓越教师培养计划高校：培养未来教育家的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-019_卓越农林人才教育培养计划/" class="internal">005-019_卓越农林人才教育培养计划：服务乡村振兴的农业人才摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-020_中国特色高水平高职学校和专业建设计划/" class="internal">005-020_中国特色高水平高职学校和专业建设计划：专科院校的&quot;双一流&quot;</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-021_法学五院四系/" class="internal">005-021_法学五院四系：中国法学教育的最高殿堂</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-022_国防七校/" class="internal">005-022_国防七校：中国国防科技工业的基石</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-023_兵工七子/" class="internal">005-023_兵工七子：国防军工领域的七所重点高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-024_通信工程两电一邮/" class="internal">005-024_通信工程两电一邮：电子信息领域的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-025_电子五强/" class="internal">005-025_电子五强：电子信息领域的五所顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-026_医学南北双雄与十一大金刚/" class="internal">005-026_医学南北双雄与十一大金刚：中国医学教育的巅峰阵容</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-027_军地四医/" class="internal">005-027_军地四医：军队医学领域的四所顶尖医学院</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-028_南北双药/" class="internal">005-028_南北双药：医药领域的两所顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-029_电气二龙四虎/" class="internal">005-029_电气二龙四虎：电力行业的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-030_财经五财一贸/" class="internal">005-030_财经五财一贸：金融财经领域的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-031_机械五虎四小龙/" class="internal">005-031_机械五虎四小龙：机械工程领域的顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-032_四大工学院/" class="internal">005-032_四大工学院：新中国工科高等教育的奠基者</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-033_建筑老八校与新八校/" class="internal">005-033_建筑老八校与新八校：中国建筑教育的最高殿堂</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-034_什么是大学的硕博点/" class="internal">005-034_什么是大学的硕博点：通向学术深造的阶梯</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-035_为什么从硕博点角度了解大学/" class="internal">005-035_为什么从硕博点角度了解大学：深度解析高校实力</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-036_硕博点设置与大学实力/" class="internal">005-036_硕博点设置与大学实力：深度解析研究生培养体系</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-037_科研水平与学术影响/" class="internal">005-037_科研水平与学术影响：衡量大学实力的重要维度</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-038_转专业的介绍/" class="internal">005-038_转专业的介绍：高考志愿的重要备选方案</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-039_转专业的可行性/" class="internal">005-039_转专业的可行性分析：全面解读大学转专业政策</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-040_考研与保研的相关介绍/" class="internal">005-040_考研与保研的相关介绍：通向学术深造的必经之路</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-041_升学率保研率考研率与就业质量报告/" class="internal">005-041_升学率（保研率、考研率）与就业质量报告：全面评估高校培养质量</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-042_同层次院校对比维度/" class="internal">005-042_同层次院校对比维度：科学选择的关键方法论</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-043_高考志愿填报全流程指南/" class="internal">005-043_高考志愿填报全流程指南：从估分到录取的完整攻略</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-044_QS世界大学排名与中国高校上榜解读/" class="internal">005-044_QS世界大学排名与中国高校上榜解读：权威排名深度分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-045_软科中国大学排名使用指南/" class="internal">005-045_软科中国大学排名使用指南：国内权威排名深度解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-046_大学更名合并升格历史与实力判断/" class="internal">005-046_大学更名合并升格历史与实力判断：洞察高校发展脉络</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-047_高校就业质量报告解读方法/" class="internal">005-047_高校就业质量报告解读方法：洞悉毕业生就业真相</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-048_省属公办本科院校选择指南/" class="internal">005-048_省属公办本科院校：地方高等教育的核心力量</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-049_独立学院和民办本科院校选择指南/" class="internal">005-049_独立学院和民办本科院校：全面解析与选择指南</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-050_高等职业院校选择指南/" class="internal">005-050_高等职业院校全解析：大专高职的选择与未来</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-051_新建大学与筹建高校盘点/" class="internal">005-051_新建大学与筹建高校盘点（2024至2026）：新兴高等教育力量全面解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-052_2026年高考招生政策变化解读/" class="internal">005-052_2026年高考各高校招生政策变化全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-053_中外合作办学院校与项目一览/" class="internal">005-053_中外合作办学院校与项目一览：国际化教育选择指南</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-054_高考志愿填报常见问题与解答/" class="internal">005-054_高考志愿填报常见问题与解答：资深专家权威答疑</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-055_各高校第二轮双一流建设学科名单/" class="internal">005-055_各高校第二轮双一流建设学科名单：全面解读与志愿填报指导</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-056_地方高水平大学建设计划盘点/" class="internal">005-056_地方高水平大学建设计划盘点：省级重点高校全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-057_校友会与武书连排名对比参考/" class="internal">005-057_校友会与武书连排名对比参考：国内两大排名系统深度解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-058_行业特色高校推荐/" class="internal">005-058_行业特色高校推荐：交通、邮电、财经、政法等领域顶尖院校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-059_院校招生规模与录取难度的关系/" class="internal">005-059_院校招生规模与录取难度的关系：深度解析高考志愿填报</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-060_2026年高考备考与规划指南/" class="internal">005-060_2026年高考备考与规划指南：走向成功之路</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-061_省部共建高校名单与优势分析/" class="internal">005-061_省部共建高校名单与优势分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-062_高校校园环境与硬件设施评估参考/" class="internal">005-062_高校校园环境与硬件设施评估参考</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-063_高校生师比与教学资源评估/" class="internal">005-063_高校生师比与教学资源评估</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-064_高校国际化水平评估（留学交换、外籍教师占比）/" class="internal">005-064_高校国际化水平评估：留学交换与外籍教师</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-065_高校校友资源与社会影响力/" class="internal">005-065_高校校友资源与社会影响力</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-066_高校学生满意度调查数据汇总/" class="internal">005-066_高校学生满意度调查数据汇总</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-067_各高校转专业成功率数据对比/" class="internal">005-067_各高校转专业成功率数据对比</a></li>
+<li><a href="/gaokao-zhishiku/16_政策动态/017-028_大学改名专题：志愿填报里的隐藏洼地/" class="internal">大学改名专题：志愿填报里的隐藏洼地</a></li>
+
+</ul>
+</article>
+</div>
+</div>
+</div>
+</body>
+</html>

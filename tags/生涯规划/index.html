@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><title>首页</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="引航者高考志愿填报知识库"/><meta property="og:title" content="首页"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="首页"/><meta name="twitter:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image:alt" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:url" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta name="twitter:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="1234k-lang.github.io"/><meta property="og:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><meta property="twitter:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><link rel="icon" href="/gaokao-zhishiku/static/icon.png"/><meta name="description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta name="generator" content="Quartz"/><link href="/gaokao-zhishiku/index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="/gaokao-zhishiku/prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+window.__quartzGraphRuntimePath = "./graph-runtime.js"
+let __fetchDataPromise
+const fetchData = {
+  then(onFulfilled, onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.finally(onFinally)
+  },
+}
+let __fetchNavDataPromise
+const fetchNavData = {
+  then(onFulfilled, onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.finally(onFinally)
+  },
+}
+let __fetchGraphDataPromise
+const fetchGraphData = {
+  then(onFulfilled, onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.finally(onFinally)
+  },
+}</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://1234k-lang.github.io/gaokao-zhishiku/index.xml"/><script>
+// Auto-verify for public access
+(function(){
+  try {
+    localStorage.setItem("access_verified", "true");
+    localStorage.setItem("access_verified_session", "true");
+    localStorage.setItem("verified_code", "public");
+    localStorage.setItem("verified_code_session", "public");
+    localStorage.setItem("bound_phone", "public");
+    sessionStorage.setItem("access_verified", "true");
+    sessionStorage.setItem("access_verified_session", "true");
+    sessionStorage.setItem("verified_code", "public");
+    sessionStorage.setItem("verified_code_session", "public");
+  } catch(e) {}
+})();
+</script></head>
+<body data-slug="tags/生涯规划">
+<div id="quartz-root" class="page">
+<div id="quartz-body">
+<div class="left sidebar">
+<h2 class="page-title"><a href="..">引航者高考志愿填报知识库</a></h2>
+</div>
+<div class="center">
+<div class="page-header">
+<div class="popover-hint">
+<nav class="breadcrumb-container" aria-label="breadcrumbs">
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/">Home</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/tags/">标签</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><span>生涯规划</span></div>
+</nav>
+<h1 class="article-title">标签: 生涯规划</h1>
+<p class="content-meta"><span>共 30 篇文章</span></p>
+</div>
+</div>
+<article class="popover-hint">
+<ul class="tags-list">
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-001_转专业政策与成功策略/" class="internal">009-001_大学转专业政策与成功策略全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-002_辅修与双学位选择指南/" class="internal">009-002_大学辅修与双学位选择全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-003_考研跨考难度分析/" class="internal">009-003_考研跨专业报考难度全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-004_出国留学准备与中外合作办学筛选/" class="internal">009-004_出国留学准备与中外合作办学筛选全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-005_行业周期与专业选择/" class="internal">009-005_行业周期与专业选择全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-006_人工智能冲击下职业抗风险能力分析/" class="internal">009-006_人工智能冲击下职业抗风险能力分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-007_编制内（公务员、事业单位、国企）专业需求变化/" class="internal">009-007_编制内职业（公务员、事业单位、国企）专业需求变化全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-008_大学四年发展规划建议/" class="internal">009-008_大学四年发展规划建议全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-009_GPA与保研规划指南/" class="internal">009-009_GPA与保研规划全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-010_大学新生入学适应指南/" class="internal">009-010_大学新生入学适应全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-011_大学期间实习规划路径与时间表/" class="internal">009-011_大学期间实习规划路径与时间表全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-012_考研vs就业决策框架与分析/" class="internal">009-012_考研与就业决策框架全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-013_各高校保研率排名与变化趋势/" class="internal">009-013_各高校保研率排名与变化趋势全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-014_出国留学申请时间线与准备清单/" class="internal">009-014_出国留学申请时间线与准备清单全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-015_研究生专业选择与跨考可行性分析/" class="internal">009-015_研究生专业选择与跨考可行性分析全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-016_职业资格证书规划（法考、CPA、医师资格等）/" class="internal">009-016_职业资格证书规划全面指南（法考、CPA、医师资格等）</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-017_创业与自由职业准备指南/" class="internal">009-017_创业与自由职业准备指南全面分析</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-018_第二学位与辅修实操建议/" class="internal">009-018_第二学位与辅修实操建议全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-019_校内学术竞赛与科研项目参与指南/" class="internal">009-019_校内学术竞赛与科研项目参与指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-020_就业城市选择与户口落户规划/" class="internal">009-020_就业城市选择与户口落户规划全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-021_职业转行适配度分析/" class="internal">009-021_职业转行适配度分析全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-022_公务员考试专业对口与岗位分析/" class="internal">009-022_公务员考试专业对口与岗位分析全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-023_选调生报考条件与准备策略/" class="internal">009-023_选调生报考条件与准备策略全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-024_互联网大厂求职专业与学历要求/" class="internal">009-024_互联网大厂求职专业与学历要求全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-025_央企国企校招目标院校与专业分析/" class="internal">009-025_央企国企校招目标院校与专业分析全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-026_教师编制考试专业要求与竞争分析/" class="internal">009-026_教师编制考试专业要求与竞争分析全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-027_医学生规培与住院医师培训路径/" class="internal">009-027_医学生规培与住院医师培训路径全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-028_法学生法考备考与就业方向规划/" class="internal">009-028_法学生法考备考与就业方向规划全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-029_大学期间社团活动与综合素质提升/" class="internal">009-029_大学期间社团活动与综合素质提升全面指南</a></li>
+<li><a href="/gaokao-zhishiku/09_大学生涯规划/009-030_毕业论文与学位授予要求提前了解/" class="internal">009-030_毕业论文与学位授予要求提前了解全面指南</a></li>
+
+</ul>
+</article>
+</div>
+</div>
+</div>
+</body>
+</html>

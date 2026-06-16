@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><title>首页</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="引航者高考志愿填报知识库"/><meta property="og:title" content="首页"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="首页"/><meta name="twitter:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image:alt" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:url" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta name="twitter:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="1234k-lang.github.io"/><meta property="og:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><meta property="twitter:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><link rel="icon" href="/gaokao-zhishiku/static/icon.png"/><meta name="description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta name="generator" content="Quartz"/><link href="/gaokao-zhishiku/index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="/gaokao-zhishiku/prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+window.__quartzGraphRuntimePath = "./graph-runtime.js"
+let __fetchDataPromise
+const fetchData = {
+  then(onFulfilled, onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.finally(onFinally)
+  },
+}
+let __fetchNavDataPromise
+const fetchNavData = {
+  then(onFulfilled, onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.finally(onFinally)
+  },
+}
+let __fetchGraphDataPromise
+const fetchGraphData = {
+  then(onFulfilled, onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.finally(onFinally)
+  },
+}</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://1234k-lang.github.io/gaokao-zhishiku/index.xml"/><script>
+// Auto-verify for public access
+(function(){
+  try {
+    localStorage.setItem("access_verified", "true");
+    localStorage.setItem("access_verified_session", "true");
+    localStorage.setItem("verified_code", "public");
+    localStorage.setItem("verified_code_session", "public");
+    localStorage.setItem("bound_phone", "public");
+    sessionStorage.setItem("access_verified", "true");
+    sessionStorage.setItem("access_verified_session", "true");
+    sessionStorage.setItem("verified_code", "public");
+    sessionStorage.setItem("verified_code_session", "public");
+  } catch(e) {}
+})();
+</script></head>
+<body data-slug="tags/志愿填报">
+<div id="quartz-root" class="page">
+<div id="quartz-body">
+<div class="left sidebar">
+<h2 class="page-title"><a href="..">引航者高考志愿填报知识库</a></h2>
+</div>
+<div class="center">
+<div class="page-header">
+<div class="popover-hint">
+<nav class="breadcrumb-container" aria-label="breadcrumbs">
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/">Home</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/tags/">标签</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><span>志愿填报</span></div>
+</nav>
+<h1 class="article-title">标签: 志愿填报</h1>
+<p class="content-meta"><span>共 256 篇文章</span></p>
+</div>
+</div>
+<article class="popover-hint">
+<ul class="tags-list">
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-001_提前批/" class="internal">001-001_提前批——机遇与风险并存的特殊批次</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-002_志愿填报时间轴与任务清单/" class="internal">001-002_志愿填报时间轴与任务清单——2026年完整攻略</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-003_院校+专业组模式/" class="internal">001-003_院校+专业组模式——新高考志愿填报的核心模式深度解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-004_专业（类）+院校模式/" class="internal">001-004_专业（类）+院校模式——新高考志愿填报的精细化选择深度解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-005_老高考院校模式/" class="internal">001-005_老高考院校模式——传统高考志愿填报方式深度解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-006_填报模式举例说明/" class="internal">001-006_填报模式举例说明——不同省份志愿填报模式实例解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-007_各省志愿填报特点专辑/" class="internal">001-007_各省志愿填报特点专辑——全国各省志愿填报政策全解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-008_批次线/" class="internal">001-008_批次线——高考录取的基准线深度解析</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-009_投档线/" class="internal">001-009_投档线</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-010_专业线/" class="internal">001-010_专业线</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-011_各省近3至5年批次线数据汇总/" class="internal">001-011_各省近3至5年批次线数据汇总</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-012_院校投档线与专业录取分数据查询指南/" class="internal">001-012_院校投档线与专业录取分数据查询指南</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-013_排除（专业选择、院校倾向、地区偏好）/" class="internal">001-013_排除法——高考志愿填报的关键方法论</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-014_调研（学校情况、专业培养方向）/" class="internal">001-014_调研——高考志愿填报信息收集与分析方法论</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-015_最后的框定与决策/" class="internal">001-015_最后的框定与决策——高考志愿填报的最终确定</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-016_以片面的认知来决定专业/" class="internal">001-016_以片面的认知来决定专业</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-017_无法正视专业劝退/" class="internal">001-017_无法正视专业劝退</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-018_忽视学校条件/" class="internal">001-018_忽视学校条件——高考志愿填报中的致命误区</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-019_误信野鸡大学/" class="internal">001-019_误信野鸡大学——高考志愿填报中的致命陷阱</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-020_混淆相似概念/" class="internal">001-020_混淆相似概念——高考志愿填报中的认知误区</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-021_人云亦云/" class="internal">001-021_高考志愿填报常见误区深度剖析——避免填报中的致命错误</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-022_忽视招生章程/" class="internal">001-022_忽视招生章程——高考志愿填报中的致命疏忽</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-023_填报策略激进/" class="internal">001-023_填报策略激进——高考志愿填报中的风险陷阱</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-024_不服从调剂/" class="internal">001-024_不服从调剂——高考志愿填报中的致命选择</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-025_随意填报提前批/" class="internal">001-025_随意填报提前批——高考志愿填报中的冲动决策</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-026_丧失决策权/" class="internal">001-026_丧失决策权——高考志愿填报中的角色错位</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-027_野鸡大学名单与混淆校名辨析/" class="internal">001-027_野鸡大学名单与混淆校名辨析——识别虚假大学的必备知识</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-028_非学历教育机构伪装统招套路揭秘/" class="internal">001-028_非学历教育机构伪装统招套路揭秘——识别虚假招生的必备知识</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-029_高考报考信息诈骗防范指南/" class="internal">001-029_高考报考信息诈骗防范指南——保护考生权益的必备知识</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-030_志愿填报常见误区汇总/" class="internal">001-030_志愿填报常见误区汇总——2026年家长必须避开的60个坑</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-031_志愿填报全流程图解（从出分到录取）/" class="internal">001-031_志愿填报全流程图解——从出分到录取的完整指南</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-032_各省志愿填报系统操作指南/" class="internal">001-032_高考志愿填报系统操作指南——各省填报流程全攻略</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-033_志愿表填写最终检查清单/" class="internal">001-033_志愿表填写最终检查清单——确保万无一失</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-034_家长与考生志愿填报沟通框架/" class="internal">001-034_家长与考生志愿填报沟通框架——构建和谐决策氛围</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-035_志愿填报心理建设与压力管理/" class="internal">001-035_高考志愿填报的72小时紧急行动方案——分数公布后的黄金时间管理</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-036_出分后72小时紧急行动方案/" class="internal">001-036_出分后72小时紧急行动方案——2026年高考志愿填报关键期</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-037_模拟志愿填报演练方案/" class="internal">001-037_模拟志愿填报演练方案——提前熟悉流程，确保万无一失</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-038_复读生志愿填报注意事项/" class="internal">001-038_复读生志愿填报注意事项——再战高考的特殊考量</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-039_各省志愿填报时间节点汇总（2026年版）/" class="internal">001-039_各省志愿填报时间节点汇总（2026年版）</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-040_志愿填报信息收集渠道与时间规划/" class="internal">001-040_高考志愿填报信息收集渠道与时间规划——高效备考指南</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-041_志愿填报中的家庭会议组织方法/" class="internal">001-041_志愿填报中的家庭会议组织方法——凝聚共识，科学决策</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-042_志愿填报后的等待期心态调整/" class="internal">001-042_志愿填报后的等待期心态调整——保持平和，迎接结果</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-043_录取结果查询方法与未录取应对/" class="internal">001-043_录取结果查询方法与未录取应对——高考录取全攻略</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-044_新高考3+1+2省份志愿填报实操详解/" class="internal">001-044_新高考3+1+2省份志愿填报实操详解——步骤清晰，操作便捷</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-045_新高考3+3省份志愿填报实操详解/" class="internal">001-045_新高考3+3省份志愿填报实操详解——把握机会，精准填报</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-046_传统高考省份志愿填报实操详解/" class="internal">001-046_传统高考省份志愿填报实操详解——熟悉流程，顺利完成</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-047_提前批各类型招生志愿填报策略汇总/" class="internal">001-047_提前批各类型招生志愿填报策略汇总——全面了解，把握机会</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-048_特殊类型批次志愿填报注意事项/" class="internal">001-048_特殊类型批次志愿填报注意事项——多元录取，谨慎选择</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-049_二三本合并后的志愿填报策略调整/" class="internal">001-049_二三本合并后的志愿填报策略调整——适应新形势，把握新机会</a></li>
+<li><a href="/gaokao-zhishiku/01_志愿填报底层逻辑/001-050_中外合作办学志愿填报专题/" class="internal">001-050_中外合作办学志愿填报专题</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-001_平行志愿/" class="internal">002-001_平行志愿——高考录取的核心规则深度解读</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-002_顺序志愿/" class="internal">002-002_顺序志愿——传统录取模式深度解析</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-003_平行志愿和顺序志愿的投档逻辑与风险点/" class="internal">002-003_平行志愿和顺序志愿的投档逻辑与风险点</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-004_专业组填报技巧/" class="internal">002-004_专业组填报技巧</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-005_有调剂政策的省份务必勾选调剂选项/" class="internal">002-005_有调剂政策的省份务必勾选调剂选项</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-006_无调剂政策的省份拉开志愿梯度/" class="internal">002-006_无调剂政策的省份拉开志愿梯度</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-007_调剂与志愿梯度的关系/" class="internal">002-007_调剂与志愿梯度的关系</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-008_提前了解调剂专业范围/" class="internal">002-008_提前了解调剂专业范围</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-009_服从调剂利弊分析与策略/" class="internal">002-009_服从调剂利弊分析与策略——如何理性选择</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-010_调剂与退档/" class="internal">002-010_调剂与退档</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-011_征集志愿/" class="internal">002-011_征集志愿——高考录取的“补考”机会深度解析</a></li>
+<li><a href="/gaokao-zhishiku/02_平行志愿规则/002-012_滑档与掉档的成因与预防/" class="internal">002-012_滑档与掉档的成因与预防——高考录取风险深度解析</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-001_学校、专业和地区的取舍决策/" class="internal">003-001_学校、专业和地区的取舍决策——高考志愿填报的核心博弈</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-002_院校优先vs专业优先vs城市优先的决策树/" class="internal">003-002_院校优先vs专业优先vs城市优先的决策树</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-003_容错空间/" class="internal">003-003_容错空间——高考志愿填报的风险控制艺术</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-004_冲稳保垫志愿梯度设计模型/" class="internal">003-004_冲稳保垫志愿梯度设计模型</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-005_老高考与新高考院校+专业组志愿填报策略/" class="internal">003-005_老高考与新高考院校+专业组志愿填报策略</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-006_新高考专业（类）+院校模式志愿填报策略/" class="internal">003-006_新高考专业（类）+院校模式志愿填报策略</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-007_重要共识/" class="internal">003-007_高考志愿填报重要共识——必须牢记的核心原则</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-008_高分考生（985冲刺段）志愿策略/" class="internal">003-008_高分考生（985冲刺段）志愿策略——如何冲击顶尖名校</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-009_中段考生（一本线上）志愿策略/" class="internal">003-009_中段考生（一本线上）志愿策略——如何在激烈竞争中找到最优解</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-010_压线考生志愿填报技巧/" class="internal">003-010_压线考生志愿填报技巧——如何实现低分高就</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-011_本科线附近考生保本科策略/" class="internal">003-011_本科线附近考生保本科策略——如何守住本科门槛</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-012_名校冷门vs普通校热门案例分析/" class="internal">003-012_名校冷门专业与普通校热门专业——高考志愿填报的艰难抉择</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-013_不同分数段志愿方案模板/" class="internal">003-013_不同分数段志愿方案模板——精准定位，科学填报</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-014_同分同位次考生的志愿差异化策略/" class="internal">003-014_同分同位次考生的志愿差异化策略——在竞争中脱颖而出</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-001_位次/" class="internal">004-001_位次——高考志愿填报的核心定位指标</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-002_线差/" class="internal">004-002_线差——志愿填报的重要参考指标深度解析</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-003_一分一段表/" class="internal">004-003_一分一段表——高考志愿填报的核心数据工具深度解析</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-004_同位分/" class="internal">004-004_同位分与位次转换——高考志愿填报核心技术解析</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-005_位次转换/" class="internal">004-005_位次转换与等效分——高考志愿填报核心技术深度解析</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-006_投档线/" class="internal">004-006_投档线——高考录取的第一道门槛深度解析</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-007_一分一段表的重要性/" class="internal">004-007_一分一段表——高考志愿填报的核心数据工具</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-008_位次法换算公式与适用场景/" class="internal">004-008_位次法换算公式与适用场景</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-009_线差法换算公式与适用场景/" class="internal">004-009_线差法换算公式与适用场景</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-010_等效分换算方法/" class="internal">004-010_等效分换算方法</a></li>
+<li><a href="/gaokao-zhishiku/04_位次vs分数本质/004-011_多次模考成绩波动下的位次定位方法/" class="internal">004-011_多次模考成绩波动下的位次定位方法——科学评估，合理定位</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-001_选出适合自己院校的八个角度/" class="internal">005-001_选出适合自己院校的八个角度</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-002_C9联盟/" class="internal">005-002_C9联盟：中国最顶尖大学的超级舰队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-003_985工程高校/" class="internal">005-003_985工程高校：中国高等教育的旗舰舰队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-004_211工程高校/" class="internal">005-004_211工程高校：通向一流的重要阶梯</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-005_双一流建设高校/" class="internal">005-005_双一流建设高校：中国高等教育的新标杆</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-006_省内重点建设高校/" class="internal">005-006_省内重点建设高校：各省特色名校全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-007_省属公办本科院校/" class="internal">005-007_省属公办本科院校：高等教育的重要组成部分</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-008_独立学院和民办本科院校/" class="internal">005-008_独立学院和民办本科院校：高考升学的另一重要选择</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-009_国家示范高职与国家骨干高职/" class="internal">005-009_国家示范高职与国家骨干高职：专科院校的国家队</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-010_普通高等职业院校/" class="internal">005-010_普通高等职业院校：高等教育的重要组成部分</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-011_什么是部级直属高校/" class="internal">005-011_什么是部级直属高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-012_原部级直属高校名单/" class="internal">005-012_原部级直属高校名单：历史变迁与现状分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-013_现中央部委直属高校名单/" class="internal">005-013_现中央部委直属高校名单： current Configuration全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-014_基础学科拔尖学生培养试验计划/" class="internal">005-014_基础学科拔尖学生培养试验计划：培养未来学术大师的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-015_卓越工程师教育培养计划高校/" class="internal">005-015_卓越工程师教育培养计划高校：培养工程科技人才的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-016_卓越医生教育培养计划/" class="internal">005-016_卓越医生教育培养计划：培养未来医学精英的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-017_卓越法律人才教育培养计划高校/" class="internal">005-017_卓越法律人才教育培养计划高校：培养法治中国建设的栋梁之才</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-018_卓越教师培养计划高校/" class="internal">005-018_卓越教师培养计划高校：培养未来教育家的摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-019_卓越农林人才教育培养计划/" class="internal">005-019_卓越农林人才教育培养计划：服务乡村振兴的农业人才摇篮</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-020_中国特色高水平高职学校和专业建设计划/" class="internal">005-020_中国特色高水平高职学校和专业建设计划：专科院校的&quot;双一流&quot;</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-021_法学五院四系/" class="internal">005-021_法学五院四系：中国法学教育的最高殿堂</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-022_国防七校/" class="internal">005-022_国防七校：中国国防科技工业的基石</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-023_兵工七子/" class="internal">005-023_兵工七子：国防军工领域的七所重点高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-024_通信工程两电一邮/" class="internal">005-024_通信工程两电一邮：电子信息领域的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-025_电子五强/" class="internal">005-025_电子五强：电子信息领域的五所顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-026_医学南北双雄与十一大金刚/" class="internal">005-026_医学南北双雄与十一大金刚：中国医学教育的巅峰阵容</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-027_军地四医/" class="internal">005-027_军地四医：军队医学领域的四所顶尖医学院</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-028_南北双药/" class="internal">005-028_南北双药：医药领域的两所顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-029_电气二龙四虎/" class="internal">005-029_电气二龙四虎：电力行业的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-030_财经五财一贸/" class="internal">005-030_财经五财一贸：金融财经领域的黄金组合</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-031_机械五虎四小龙/" class="internal">005-031_机械五虎四小龙：机械工程领域的顶尖高校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-032_四大工学院/" class="internal">005-032_四大工学院：新中国工科高等教育的奠基者</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-033_建筑老八校与新八校/" class="internal">005-033_建筑老八校与新八校：中国建筑教育的最高殿堂</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-034_什么是大学的硕博点/" class="internal">005-034_什么是大学的硕博点：通向学术深造的阶梯</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-035_为什么从硕博点角度了解大学/" class="internal">005-035_为什么从硕博点角度了解大学：深度解析高校实力</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-036_硕博点设置与大学实力/" class="internal">005-036_硕博点设置与大学实力：深度解析研究生培养体系</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-037_科研水平与学术影响/" class="internal">005-037_科研水平与学术影响：衡量大学实力的重要维度</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-038_转专业的介绍/" class="internal">005-038_转专业的介绍：高考志愿的重要备选方案</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-039_转专业的可行性/" class="internal">005-039_转专业的可行性分析：全面解读大学转专业政策</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-040_考研与保研的相关介绍/" class="internal">005-040_考研与保研的相关介绍：通向学术深造的必经之路</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-041_升学率保研率考研率与就业质量报告/" class="internal">005-041_升学率（保研率、考研率）与就业质量报告：全面评估高校培养质量</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-042_同层次院校对比维度/" class="internal">005-042_同层次院校对比维度：科学选择的关键方法论</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-043_高考志愿填报全流程指南/" class="internal">005-043_高考志愿填报全流程指南：从估分到录取的完整攻略</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-044_QS世界大学排名与中国高校上榜解读/" class="internal">005-044_QS世界大学排名与中国高校上榜解读：权威排名深度分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-045_软科中国大学排名使用指南/" class="internal">005-045_软科中国大学排名使用指南：国内权威排名深度解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-046_大学更名合并升格历史与实力判断/" class="internal">005-046_大学更名合并升格历史与实力判断：洞察高校发展脉络</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-047_高校就业质量报告解读方法/" class="internal">005-047_高校就业质量报告解读方法：洞悉毕业生就业真相</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-048_省属公办本科院校选择指南/" class="internal">005-048_省属公办本科院校：地方高等教育的核心力量</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-049_独立学院和民办本科院校选择指南/" class="internal">005-049_独立学院和民办本科院校：全面解析与选择指南</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-050_高等职业院校选择指南/" class="internal">005-050_高等职业院校全解析：大专高职的选择与未来</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-051_新建大学与筹建高校盘点/" class="internal">005-051_新建大学与筹建高校盘点（2024至2026）：新兴高等教育力量全面解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-052_2026年高考招生政策变化解读/" class="internal">005-052_2026年高考各高校招生政策变化全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-053_中外合作办学院校与项目一览/" class="internal">005-053_中外合作办学院校与项目一览：国际化教育选择指南</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-054_高考志愿填报常见问题与解答/" class="internal">005-054_高考志愿填报常见问题与解答：资深专家权威答疑</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-055_各高校第二轮双一流建设学科名单/" class="internal">005-055_各高校第二轮双一流建设学科名单：全面解读与志愿填报指导</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-056_地方高水平大学建设计划盘点/" class="internal">005-056_地方高水平大学建设计划盘点：省级重点高校全解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-057_校友会与武书连排名对比参考/" class="internal">005-057_校友会与武书连排名对比参考：国内两大排名系统深度解析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-058_行业特色高校推荐/" class="internal">005-058_行业特色高校推荐：交通、邮电、财经、政法等领域顶尖院校</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-059_院校招生规模与录取难度的关系/" class="internal">005-059_院校招生规模与录取难度的关系：深度解析高考志愿填报</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-060_2026年高考备考与规划指南/" class="internal">005-060_2026年高考备考与规划指南：走向成功之路</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-061_省部共建高校名单与优势分析/" class="internal">005-061_省部共建高校名单与优势分析</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-062_高校校园环境与硬件设施评估参考/" class="internal">005-062_高校校园环境与硬件设施评估参考</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-063_高校生师比与教学资源评估/" class="internal">005-063_高校生师比与教学资源评估</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-064_高校国际化水平评估（留学交换、外籍教师占比）/" class="internal">005-064_高校国际化水平评估：留学交换与外籍教师</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-065_高校校友资源与社会影响力/" class="internal">005-065_高校校友资源与社会影响力</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-066_高校学生满意度调查数据汇总/" class="internal">005-066_高校学生满意度调查数据汇总</a></li>
+<li><a href="/gaokao-zhishiku/05_如何选出适合自己的院校/005-067_各高校转专业成功率数据对比/" class="internal">005-067_各高校转专业成功率数据对比</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-001_三步掌握专业选择方法论/" class="internal">006-001_三步掌握专业选择方法论</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-002_体制内（公务员、事业编、央国企）/" class="internal">006-002_体制内就业方向深度解析：公务员、事业编、央国企</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-003_体制外（民企、外资）/" class="internal">006-003_体制外就业方向深度解析：民营企业与外资企业</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-004_经济状况（长周期与短周期）/" class="internal">006-004_经济状况与专业选择：长周期与短周期的视角</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-005_家庭资源（父母、亲戚）/" class="internal">006-005_家庭资源与专业选择：如何利用家庭资源做出最优决策</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-006_成绩分段与专业匹配/" class="internal">006-006_成绩分段与专业匹配：科学定位专业选择的方向</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-007_考学意愿及能力评估/" class="internal">006-007_考学意愿及能力评估：科学规划高考志愿的基础</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-008_霍兰德职业兴趣测试/" class="internal">006-008_霍兰德职业兴趣测试与专业选择：发现你的职业倾向</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-009_MBTI性格测试与专业适配表/" class="internal">006-009_MBTI性格测试与专业适配：发现你的性格优势</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-010_大五人格测试与专业适配/" class="internal">006-010_大五人格理论：专业选择的深层性格视角</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-011_个人能力优势劣势分析方法/" class="internal">006-011_个人能力优势劣势分析方法：科学认识自己</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-012_学科能力评估方法/" class="internal">006-012_学科能力评估方法：发现你的学科优势</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-013_兴趣探索与职业方向定位/" class="internal">006-013_兴趣探索与职业方向定位：从心之所向到行之所在</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-014_了解培养方案（教务处官网与课程查询）/" class="internal">006-014_了解培养方案：深入认识专业的第一步</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-015_相似专业辨析与必备常识/" class="internal">006-015_相似专业辨析与必备常识：拨开专业选择的迷雾</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-016_专业与职业对应关系/" class="internal">006-016_专业与职业对应关系：从课堂到职场的桥梁</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-017_新兴专业指南/" class="internal">006-017_新兴专业指南：把握未来发展的先机</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-018_天坑专业避坑指南与跨学科交叉专业推荐/" class="internal">006-018_天坑专业避坑指南与跨学科交叉专业推荐</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-019_考公考编热门专业一览/" class="internal">006-019_考公考编热门专业一览</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-020_哲学类专业报考指南/" class="internal">006-020_哲学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-021_经济学类专业报考指南/" class="internal">006-021_经济学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-022_法学类专业报考指南/" class="internal">006-022_法学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-023_教育学类专业报考指南/" class="internal">006-023_教育学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-024_文学类专业报考指南/" class="internal">006-024_文学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-025_历史学类专业报考指南/" class="internal">006-025_历史学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-026_理学类专业报考指南/" class="internal">006-026_理学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-027_工学类专业报考指南/" class="internal">006-027_工学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-028_农学类专业报考指南/" class="internal">006-028_农学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-029_医学类专业报考全解析/" class="internal">006-029_医学类专业报考全解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-030_管理学类专业报考指南/" class="internal">006-030_管理学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-031_艺术学类专业报考指南/" class="internal">006-031_艺术学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-032_军事学类专业报考指南/" class="internal">006-032_军事学类专业报考指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-033_计算机类专业深度解析（CS、AI、大数据、网安）/" class="internal">006-033_计算机类专业深度解析：计算机科学、人工智能、大数据、网络安全</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-034_电子信息类专业深度解析（通信、微电子、集成电路）/" class="internal">006-034_电子信息类专业深度解析（通信、微电子、集成电路）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-035_电气工程类专业深度解析（电气、自动化、智能电网）/" class="internal">006-035_电气工程类专业深度解析（电气、自动化、智能电网）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-036_机械类专业深度解析（机械、车辆、智能制造）/" class="internal">006-036_机械类专业深度解析（机械、车辆、智能制造）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-037_金融经济类专业深度解析（金融、经济、国贸、保险）/" class="internal">006-037_金融经济类专业深度解析：金融学、经济学、国际经济与贸易、保险学</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-038_师范教育类专业深度解析（学前、小学、学科教育）/" class="internal">006-038_师范教育类专业深度解析（学前、小学、学科教育）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-039_临床医学与口腔医学深度解析/" class="internal">006-039_临床医学与口腔医学深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-040_法学专业深度解析（法考通过率、就业去向）/" class="internal">006-040_法学专业深度解析（法考通过率、就业去向）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-041_新能源与碳中和相关专业深度解析/" class="internal">006-041_新能源与碳中和相关专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-042_生物医药与大健康专业深度解析/" class="internal">006-042_生物医药与大健康专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-043_半导体与集成电路专业深度解析/" class="internal">006-043_半导体与集成电路专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-044_航空航天类专业深度解析/" class="internal">006-044_航空航天类专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-045_会计审计类专业深度解析（CPA、ACCA方向）/" class="internal">006-045_会计审计类专业深度解析（CPA、ACCA方向）</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-046_心理学专业深度解析/" class="internal">006-046_心理学专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-047_新闻传播类专业深度解析/" class="internal">006-047_新闻传播类专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-048_护理学与公共卫生类专业深度解析/" class="internal">006-048_护理学与公共卫生类专业深度解析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-049_2026年教育部新增本科专业详解/" class="internal">006-049_2026年教育部新增本科专业详解</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-050_2026年教育部撤销本科专业名单与原因分析/" class="internal">006-050_2026年教育部撤销本科专业名单与原因分析</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-051_大类招生与专业分流机制详解/" class="internal">006-051_大类招生与专业分流机制详解</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-052_女生适合的专业推荐与就业分析/" class="internal">006-052_女生适合的专业推荐与就业分析：2026年全面指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-053_男生适合的专业推荐与就业分析/" class="internal">006-053_男生适合的专业推荐与就业分析：2026年全面指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-054_不同分数段的专业选择策略/" class="internal">006-054_不同分数段的专业选择策略：2026年高考志愿填报全面指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-055_张雪峰专业选择八连问方法论/" class="internal">006-055_张雪峰专业选择八连问方法论：高考志愿填报的实战指南</a></li>
+<li><a href="/gaokao-zhishiku/06_如何选择好专业/006-056_专业选择的家庭经济因素考量/" class="internal">006-056_专业选择的家庭经济因素考量</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-001_城市排序及首要考虑因素/" class="internal">007-001_城市排序及首要考虑因素</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-002_气候/" class="internal">007-002_气候：容易被忽视但影响重大的选择因素</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-003_饮食/" class="internal">007-003_饮食：影响大学生活质量的重要因素</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-004_文化/" class="internal">007-004_文化：城市精神气质对成长的潜在影响</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-005_基建/" class="internal">007-005_基建：城市基础设施与生活便利度</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-006_视野/" class="internal">007-006_视野：城市格局与眼界的拓展</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-007_信息技术产业/" class="internal">007-007_信息技术产业：互联网时代的城市选择指南</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-008_金融服务业/" class="internal">007-008_金融服务业：精英行业的城市布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-009_轻工业/" class="internal">007-009_轻工业：民生消费产业的城市布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-010_重工业/" class="internal">007-010_重工业：国家支柱产业的布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-011_先进制造/" class="internal">007-011_先进制造：智能制造时代的城市选择指南</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-012_医药与生物技术产业/" class="internal">007-012_医药与生物技术产业：健康中国战略下的城市布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-013_新能源和环保产业/" class="internal">007-013_新能源和环保产业：绿色发展时代的城市布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-014_文化创意和影视传媒产业/" class="internal">007-014_文化创意和影视传媒产业：精神消费时代的城市布局与选择</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-015_京津（北京、天津）/" class="internal">007-015_京津地区：北京、天津——政治文化中心与北方金融重镇</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-016_江浙沪（上海、杭州、苏州、南京）/" class="internal">007-016_江浙沪地区：上海、杭州、苏州、南京——中国经济最发达的城市群</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-017_粤港澳大湾区（广州、深圳、香港、澳门）/" class="internal">007-017_粤港澳大湾区：广州、深圳、香港、澳门——中国开放的门户与创新高地</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-018_东北（沈阳、大连、长春、哈尔滨）/" class="internal">007-018_东北地区：沈阳、大连、长春、哈尔滨——老工业基地的振兴之路</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-019_西北（西安、兰州）/" class="internal">007-019_西北地区：西安、兰州——历史文化与现代发展的交融</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-020_西南（成都、重庆）/" class="internal">007-020_西南地区：成都、重庆——天府之国与山水之城的魅力</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-021_中部（武汉、郑州、长沙、合肥）/" class="internal">007-021_中部地区：武汉、郑州、长沙、合肥——长江中游的崛起与机遇</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-022_山东（济南、青岛）/" class="internal">007-022_山东地区：济南、青岛——孔孟之乡的现代发展</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-023_福建（福州、厦门）/" class="internal">007-023_福建地区：福州、厦门——海丝核心区的独特魅力</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-024_各城市大学生生活成本对比/" class="internal">007-024_各城市大学生生活成本对比——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-025_各城市落户政策与人才引进优惠汇总/" class="internal">007-025_各城市落户政策与人才引进优惠汇总——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-026_毕业生就业去向与城市留存率数据/" class="internal">007-026_毕业生就业去向与城市留存率数据——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-027_城市安全指数与宜居指数参考/" class="internal">007-027_城市安全指数与宜居指数参考——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-028_回乡就业vs留在大学所在城市决策分析/" class="internal">007-028_回乡就业vs留在大学所在城市决策分析——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-029_各城市实习机会密度与行业分布/" class="internal">007-029_各城市实习机会密度与行业分布——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-030_各城市房价与生活压力指数/" class="internal">007-030_各城市房价与生活压力指数——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-031_各城市医疗教育等公共资源对比/" class="internal">007-031_各城市医疗教育等公共资源对比——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-032_新一线城市崛起与高校资源布局/" class="internal">007-032_新一线城市崛起与高校资源布局——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-033_海南自贸港与雄安新区等新兴区域机遇/" class="internal">007-033_海南自贸港与雄安新区等新兴区域机遇——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/07_如何考虑城市/007-034_城市选择与考研调剂的关联分析/" class="internal">007-034_城市选择与考研调剂的关联分析——2026年全面分析</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-001_热门专业就业风险预警/" class="internal">008-001_热门专业就业风险预警</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-002_土木建筑类专业深度解析（现状与转型）/" class="internal">008-002_土木建筑类专业深度解析（现状与转型）</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-003_外语类专业深度解析（就业困境与突围）/" class="internal">008-003_外语类专业深度解析（就业困境与突围）</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-004_13大学科门类全景概览与选择导航/" class="internal">008-004_十三大学科门类全景概览与选择导航</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-005_专业满意度调查数据与分析/" class="internal">008-005_专业满意度调查数据与分析</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-006_专业壁垒与可替代性分析/" class="internal">008-006_专业壁垒与可替代性分析</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-007_AI时代各专业抗风险能力评估/" class="internal">008-007_AI时代各专业抗风险能力评估</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-008_各专业考研深造率排名/" class="internal">008-008_各专业考研深造率排名</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-009_各专业出国留学热度与难度/" class="internal">008-009_各专业出国留学热度与难度</a></li>
+<li><a href="/gaokao-zhishiku/08_热门专业真实就业情况/008-010_各专业应届生薪资中位数排行/" class="internal">008-010_各专业应届生薪资中位数排行：2026年全面解析</a></li>
+<li><a href="/gaokao-zhishiku/03_冲稳保策略/003-015_三四百分上本科路径与低分保本科策略/" class="internal">三四百分上本科路径与低分保本科策略</a></li>
+<li><a href="/gaokao-zhishiku/16_政策动态/017-028_大学改名专题：志愿填报里的隐藏洼地/" class="internal">大学改名专题：志愿填报里的隐藏洼地</a></li>
+
+</ul>
+</article>
+</div>
+</div>
+</div>
+</body>
+</html>

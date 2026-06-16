@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><title>首页</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;700&amp;family=Noto Sans SC:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="引航者高考志愿填报知识库"/><meta property="og:title" content="首页"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="首页"/><meta name="twitter:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image:alt" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta property="og:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:url" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta name="twitter:image" content="https://1234k-lang.github.io/gaokao-zhishiku/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="1234k-lang.github.io"/><meta property="og:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><meta property="twitter:url" content="https://1234k-lang.github.io/gaokao-zhishiku/index"/><link rel="icon" href="/gaokao-zhishiku/static/icon.png"/><meta name="description" content="引航者高考志愿填报知识库首页与全站文件索引。"/><meta name="generator" content="Quartz"/><link href="/gaokao-zhishiku/index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="/gaokao-zhishiku/prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">
+window.__quartzGraphRuntimePath = "./graph-runtime.js"
+let __fetchDataPromise
+const fetchData = {
+  then(onFulfilled, onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchDataPromise ||= fetch("./static/contentIndex.json").then((data) => data.json())
+    return __fetchDataPromise.finally(onFinally)
+  },
+}
+let __fetchNavDataPromise
+const fetchNavData = {
+  then(onFulfilled, onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchNavDataPromise ||= fetch("./static/navIndex.json").then((data) => data.json())
+    return __fetchNavDataPromise.finally(onFinally)
+  },
+}
+let __fetchGraphDataPromise
+const fetchGraphData = {
+  then(onFulfilled, onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.then(onFulfilled, onRejected)
+  },
+  catch(onRejected) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.catch(onRejected)
+  },
+  finally(onFinally) {
+    __fetchGraphDataPromise ||= fetch("./static/graphIndex.json").then((data) => data.json())
+    return __fetchGraphDataPromise.finally(onFinally)
+  },
+}</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://1234k-lang.github.io/gaokao-zhishiku/index.xml"/><script>
+// Auto-verify for public access
+(function(){
+  try {
+    localStorage.setItem("access_verified", "true");
+    localStorage.setItem("access_verified_session", "true");
+    localStorage.setItem("verified_code", "public");
+    localStorage.setItem("verified_code_session", "public");
+    localStorage.setItem("bound_phone", "public");
+    sessionStorage.setItem("access_verified", "true");
+    sessionStorage.setItem("access_verified_session", "true");
+    sessionStorage.setItem("verified_code", "public");
+    sessionStorage.setItem("verified_code_session", "public");
+  } catch(e) {}
+})();
+</script></head>
+<body data-slug="tags/综合评价">
+<div id="quartz-root" class="page">
+<div id="quartz-body">
+<div class="left sidebar">
+<h2 class="page-title"><a href="..">引航者高考志愿填报知识库</a></h2>
+</div>
+<div class="center">
+<div class="page-header">
+<div class="popover-hint">
+<nav class="breadcrumb-container" aria-label="breadcrumbs">
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/">Home</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><a href="/gaokao-zhishiku/tags/">标签</a><p> ❯ </p></div>
+<div class="breadcrumb-element"><span>综合评价</span></div>
+</nav>
+<h1 class="article-title">标签: 综合评价</h1>
+<p class="content-meta"><span>共 55 篇文章</span></p>
+</div>
+</div>
+<article class="popover-hint">
+<ul class="tags-list">
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-006_强基计划/" class="internal">012-006_强基计划</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-052_2+2与3+1等中外联合培养模式对比/" class="internal">2+2与3+1等中外联合培养模式对比全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-045_2026年强基计划39所试点高校招生要点/" class="internal">2026年强基计划39所试点高校招生要点全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-046_2026年综合评价招生省份与院校名单/" class="internal">2026年综合评价招生省份与院校名单全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-004_三大专项（国家专项、地方专项、高校专项）/" class="internal">三大专项计划（国家专项、地方专项、高校专项）全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-014_三项招飞（空军、海军、民航）/" class="internal">三项招飞（空军、海军、民航）报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-056_专升本与专接本政策详解与规划/" class="internal">专升本与专接本政策详解与规划全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-016_中外合作办学/" class="internal">中外合作办学全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-051_中外合作大学盘点（西交利物浦、宁诺、昆杜等）/" class="internal">中外合作大学盘点（西交利物浦、宁诺、昆杜等）全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-047_五大学科竞赛与升学渠道的关联/" class="internal">五大学科竞赛与升学渠道的关联全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-037_优师计划（国家优秀教师定向培养计划）/" class="internal">优师计划（国家优秀教师定向培养计划）全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-024_体育类招生/" class="internal">体育类招生全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-008_保送生/" class="internal">保送生政策全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-032_免费医学定向生政策详解/" class="internal">免费医学定向生政策详解</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-013_公安类院校与专业/" class="internal">公安类院校与专业招生全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-003_公费农科生培养计划/" class="internal">公费农科生培养计划全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-002_公费医学生/" class="internal">公费医学生全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-001_公费师范生/" class="internal">公费师范生全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-010_军校/" class="internal">军队院校招生全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-027_农村考生专项计划报考指南/" class="internal">农村考生专项计划报考指南全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-031_升学渠道适合人群画像与自测/" class="internal">升学渠道适合人群画像与自测全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-041_司法警官类院校招生政策/" class="internal">司法警官类院校招生政策全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-035_各渠道报名条件与流程对比表/" class="internal">各渠道报名条件与流程对比表全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-030_各类升学渠道时间线汇总（高一至高三）/" class="internal">各类升学渠道时间线汇总（高一至高三）全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-017_国际本科/" class="internal">国际本科全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-053_国际本科项目甄别与避坑指南/" class="internal">国际本科项目甄别与避坑指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-034_基层服务项目对接（西部计划、三支一扶等）/" class="internal">基层服务项目对接（西部计划、三支一扶等）全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-026_复读考生投档规则与填报策略/" class="internal">复读考生投档规则与填报策略全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-036_多渠道同时报名的冲突规避策略/" class="internal">多渠道同时报名策略与冲突规避指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-038_定向培养乡村教师计划/" class="internal">定向培养乡村教师计划全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-011_定向培养军士/" class="internal">定向培养军士全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-029_定向委培生/" class="internal">定向委培生全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-033_小语种单独招生政策详解/" class="internal">小语种单独招生政策详解</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-009_少年班/" class="internal">少年班报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-005_少数民族预科班与民族班/" class="internal">少数民族预科班与民族班报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-054_春季高考与夏季高考的区别与选择/" class="internal">春季高考与夏季高考的区别与选择全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-020_本科阶段联合培养/" class="internal">本科阶段联合培养全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-025_残疾考生体检受限专业与优惠政策/" class="internal">残疾考生体检受限专业与优惠政策全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-042_民航招飞详细流程与体检标准/" class="internal">民航招飞详细流程与体检标准全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-043_海军招飞详细流程与培养体系/" class="internal">海军招飞详细流程与培养体系全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-040_消防救援院校招生政策/" class="internal">消防救援院校招生政策全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-028_港澳台侨考生报考指南/" class="internal">港澳台侨考生报考指南全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-018_港澳高校报考/" class="internal">港澳高校报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-050_澳门高校内地招生完全指南/" class="internal">澳门高校内地招生完全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-019_特长类（艺术、体育等特招）/" class="internal">特长类（艺术、体育等特招）报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-039_直招士官与定向培养军士对比/" class="internal">直招士官与定向培养军士对比全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-048_科技创新类竞赛与自主招生/" class="internal">科技创新类竞赛与升学渠道全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-044_空军招飞详细流程与选拔标准/" class="internal">空军招飞详细流程与选拔标准全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-007_综合评价/" class="internal">综合评价招生全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-015_航海类专业报考/" class="internal">航海类专业报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-023_艺术类招生/" class="internal">艺术类招生全面解读</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-012_警校/" class="internal">警校报考全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-049_香港高校内地招生完全指南/" class="internal">香港高校内地招生完全指南</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-022_高职单招/" class="internal">高职单招全解析</a></li>
+<li><a href="/gaokao-zhishiku/12_多元升学渠道/012-055_高职提前招生政策与适用省份/" class="internal">高职提前招生政策与适用省份全解析</a></li>
+
+</ul>
+</article>
+</div>
+</div>
+</div>
+</body>
+</html>
